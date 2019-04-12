@@ -1,0 +1,83 @@
+@import "../public/indexnav/indexnav.wxss";
+.myselfTop{
+  padding: 38rpx 50rpx 32rpx 56rpx;
+  background: #fff;
+  width: 100%;
+  box-sizing: border-box;
+}
+.userAvata image{
+  width: 120rpx;
+  height: 120rpx;
+  margin-right: 32rpx;
+  border-radius: 100px;
+}
+.rl_img image{
+  width: 18rpx;
+  height: 30rpx;
+}
+.userName{
+  font-size: 24rpx;
+  color: #333333;
+}
+.userName view:last-of-type{
+  margin-top: 10rpx;
+}
+.myself_my_order{
+  margin: 8rpx 0;
+}
+.w_361{
+  width: 722rpx;
+  margin: 0 auto;
+  border-bottom: 1px solid #F9F9F9;
+  box-sizing: border-box;
+  padding: 18rpx 0;
+  padding-left: 24rpx;
+  color: #888888;
+}
+.myself_kit{
+  padding: 42rpx 100rpx 44rpx;
+  box-sizing: border-box;
+}
+.myself_kit>view{
+  display: inline-block;
+  text-align: center;
+}
+.myself_kit view{
+  font-size: 20rpx;
+  color: #333333;
+}
+.kit_1{
+  width: 42rpx;
+  height: 48rpx;
+}
+.kit_2{
+  width: 48rpx;
+  height: 42rpx;
+}
+.kit_3{
+  width: 42rpx;
+  height: 38rpx;
+}
+.kit_4{
+  width: 46rpx;
+  height: 32rpx;
+}
+.kit_5{
+  width: 44rpx;
+  height: 44rpx;
+}
+.kit_serve{
+  display: flex;
+  align-items:center;
+  justify-content:space-between;
+  flex-wrap: wrap;
+}
+.kit_serve{
+  padding: 44rpx 40rpx
+}
+.kit_serve>view{
+  width: 200rpx;
+}
+.kit_serve>view:nth-of-type(3n+4){
+ margin-top: 88rpx;
+}

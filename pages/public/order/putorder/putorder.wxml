@@ -1,0 +1,40 @@
+<template name="putorder" >
+   <view class='bgF'>
+        <view class='order_pad flex-row-between'>
+            <view class=''>我的房屋</view>
+            <view class='flex-r v-center'>
+               <view><text>湖南长沙岳麓区家和园 17-2101</text></view>
+               <image src='../images/checkrl.png'></image>
+            </view>
+        </view>  
+        <view class='order_pad flex-row-between'>
+            <view class=''>联系人</view>
+            <view class='flex-r v-center'>
+               <view><text>钟煌</text><text>13720278895</text></view>
+               <image src='../images/checkrl.png'></image>
+            </view>
+        </view>  
+   </view>
+<!--商品信息-->
+   <view class='bgF' style='margin-top:10rpx;'>
+      <view class='check_tit'>金雕监理</view>
+      <view class='order_details_box'>
+        <image src='../images/order_details.png'></image>  
+        <view>
+              <view class='shoop_title'>金雕监理</view>
+              <view class='color_666 o-hs-2 explain'>备注</view>
+        </view>    
+      </view>
+   </view>
+  <view class='bgF'>
+      <view class='sub flex-row-between'>
+          <view class='sub_box'>
+              <view>监理订金</view>
+              <text>(订金有效期两个月)</text>
+          </view>
+          <view>￥{{money}}</view>
+      </view>
+      <view class='all_sub'>总计：￥300</view>
+  </view>
+
+</template>

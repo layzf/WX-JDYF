@@ -1,0 +1,3 @@
+<import src="../public/order/my-order-details/my-order-details" />
+
+<template is="my-order-details"  data='{{headerState}}'></template>

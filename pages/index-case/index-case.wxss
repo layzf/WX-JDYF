@@ -1,0 +1,26 @@
+@import "../public/indexnav/indexnav.wxss";
+.case_rl_img{
+  width: 262rpx;
+  height: 146rpx;
+}
+.case_list{
+  padding: 36rpx 20rpx 48rpx 12rpx;
+  margin-bottom: 8rpx;
+  box-sizing: border-box;
+  border-radius: 8rpx;
+  height: 240rpx;
+  background:#FFF;
+}
+.case_list_tit{
+  font-size: 32rpx;
+  color:  #222223;
+}
+.case_lis_mark_out{
+  color:#888888;
+  font-size: 24rpx;
+  margin-top: 24rpx;
+  display: inline-block;
+}
+.resh{
+  text-align: center;
+}

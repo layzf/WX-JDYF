@@ -1,0 +1,36 @@
+<view>
+  <view class='contacts_margin_top bgF'>
+    <view class='m_28'>
+      <view class='contacts_user_border flex-r v-center h_64'>
+        <view>钟煌</view>
+         <text>13720278895</text>
+      </view>
+      <view class='contacts_user_bottom flex-row-between h_50'>
+            <view class='flex-r v-center'>
+                <image src='../../images/checked.png'></image>
+                <view>默认联系人</view>
+            </view> 
+            <image src='../../images/trashCan.png'></image>
+      </view>
+    </view> 
+</view> 
+<view class='contacts_margin_top bgF'>
+    <view class='m_28'>
+      <view class='contacts_user_border flex-r v-center h_64'>
+        <view>钟煌</view>
+         <text>13720278895</text>
+      </view>
+      <view class='contacts_user_bottom flex-row-between h_50'>
+            <view class='flex-r v-center'>
+                <image src='../../images/no_check.png'></image>
+                <view>默认联系人</view>
+            </view> 
+            <image src='../../images/trashCan.png'></image>
+      </view>
+    </view> 
+</view> 
+<navigator url='../addcontacts/addcontacts' hover-class='none'>
+  <button class='switch add_contacts'>添加常用联系人</button>
+</navigator>
+      
+</view> 

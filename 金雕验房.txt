@@ -1,0 +1,18 @@
+appid��wxffe22e7bd3929397
+appsecret��1e1201be3c9ae7667e5fc23029003e8f
+
+
+
+路由跳转整体用navigator跳转；
+底部footer样式：
+
+options.title{
+    1:=> 验房预约(首页左边我要验房banner图片，底部的footer的立即预约);
+      => 立即预约 => 底部预约信息弹框;
+
+    2:=> 监理(首页监理banner图片及下边全程监理button按钮)
+      => 立即预约 => 交订金(sub:"sub",succ:2) => 提交(key:"sub",suc:2);
+
+    3:=> 空气检测(首页空气检测banner图片及下边空气检测button按钮) 
+      => 立即预约 => 交订金(sub:"sub",succ:3) => 提交(key:"sub",suc:3)
+}

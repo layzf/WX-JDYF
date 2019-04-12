@@ -1,0 +1,8 @@
+.rl_W{
+  margin-left: 16rpx;
+}
+.switch_btn{
+  width: 694rpx;
+  margin: 0 auto;
+  margin-top: 62rpx;
+}

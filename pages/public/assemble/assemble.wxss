@@ -1,0 +1,5 @@
+.order_sub{
+  flex:9;
+  justify-content: flex-end;
+  padding-right: 64rpx;
+}

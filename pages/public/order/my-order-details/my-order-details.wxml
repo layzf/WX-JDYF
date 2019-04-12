@@ -1,0 +1,51 @@
+<template name="my-order-details">
+  <view class=''>
+      <view class='flex-row-between v-center order_details_header'>
+        <view class='flex-r v-center'>
+          <image src='../images/clock.png' class='fl_clock'></image>
+          <text>{{headerState==1?'等待派单':'支付尾款'}}</text>
+        </view>
+        <view class='flex-r v-center'>
+          <image src='../images/icon_dh.png' class='fr_tell'></image>
+          <text>联系商家</text>
+        </view>
+      </view>
+    <!--用户地址，称呼-->
+      <view class='bgF'>
+        <view class='h_54 flex-r v-center border-bottom'>
+          <image src='../images/icon_dz.png'></image>
+          <view>家和园17-2101</view>
+        </view>
+        <view class='h_54 flex-r v-center border-bottom'>
+          <image src='../images/icon_ry.png'></image>
+          <view>钟煌
+            <text>13720278895</text> </view>
+        </view>
+      </view>
+<!--项目信息-->
+      <view class='bgF' style='margin-top:10rpx;'>
+          <view class='order_details_inimg border-bottom order_details_inforamtion '>
+              <image src='../images/order_details.png'></image>
+              <view class='order_details_title'>金雕验房</view>
+          </view>
+          <view class='border-bottom flex-r v-center flex-row-between order_details_money'>
+              <view>项目订金</view>
+              <view>￥300</view>
+          </view>
+          <view class='border-bottom flex-r v-center flex-end   order_details_money'>
+              <text class='color_816'>实付款总计：￥3300</text>
+          </view>
+      </view>
+<!--订单信息-->
+      <view class='bgF footer_details' style='margin-top:18rpx;' >
+         <view>订金单编号：<text>23234387548437</text></view>
+         <view>订金单时间：<text>2017-11-20 10:30:32</text></view>
+         <view>转单时间：<text>2017-11-20 12:12:12</text></view>
+         <view>交付时间：<text>2017-11-20 12:12:12</text></view> 
+      </view>
+<!--底部支付尾款-->
+      <view class='footer_btns flex-r flex-end v-center bgF' wx:if='{{headerState==3}}'>
+          <button class='order_btn_active color_816'>支付尾款</button>
+      </view>
+  </view>
+</template>

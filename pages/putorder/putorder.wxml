@@ -1,0 +1,6 @@
+<import src="../public/order/putorder/putorder" />
+<import src="../public/assemble/assemble" />
+
+ <template is="putorder" data='{{money}}'></template>
+ 
+ <template is="footer_addemble" data='{{footer_sub,succ}}'></template>

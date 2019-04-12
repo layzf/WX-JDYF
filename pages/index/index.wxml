@@ -1,0 +1,70 @@
+<!--index.wxml-->
+<import src="../public/indexnav/indexnav" />
+<import src="../public/assemble/assemble" />
+
+<view style='margin-top:95rpx;'>
+<template is="indexNav" data='{{navData,currentTab}}'></template>
+      <view class='index_height'>
+        <view class='section_1'>
+            <swiper style='height:{{bannerImgHeight}}px'  autoplay='true' interval="3500" duration="1500" circular='true'>
+                 <swiper-item wx:for='{{bannerImg}}' wx:for-item='item' wx:for-index='index' wx:key='a'>
+                    <image src='{{item.imgUrl}}' alt='金雕专业' class='index_banner'></image>
+                 </swiper-item>
+            </swiper>
+          <view class='index_banner_text flex-row-around'>
+              <view><image src='../images/icone.png'></image><text>专业第三方</text></view>
+              <view><image src='../images/icone.png'></image><text>全面监督</text></view>
+              <view><image src='../images/icone.png'></image><text>权威检测</text></view>
+          </view>
+        </view>
+<!--section_1 end-->   
+        <view class='w_367'>
+          <view class='section_2 flex-cs-between'>
+                <navigator url="../check/check?id={{_id_1}}" hover-class="none">
+                 <view class='section_left bgF'>
+                      <view class='section_2_tit'>我要验房</view>
+                      <view class='section_2_txt'>验房找金雕 拼团享优惠</view>
+                      <image src='../images/sectionLeft.png' class='sectionImg'></image> 
+                  </view>
+            </navigator>  
+<!--sectionleft end-->
+            <view class='section_right'> 
+             <navigator url="../check/check?id={{_id_2}}" hover-class="none">
+                <view class='section_right_top sectionrl'>
+                    <view class='section_2_tit'>装修第三方监理</view>
+                    <view class='section_2_txt'>预算审核/全程监理/节点验收/竣工验收</view>
+                    <image src='../images/sectionRightTop.png' class='sectionImg'></image> 
+                </view>
+             </navigator>
+                
+ <!--section_right_top end-->       
+            <navigator url="../check/check?id={{_id_3}}" hover-class="none">        
+                <view class='section_right_bottom sectionrl'>      
+                    <view class='section_2_tit'>空气检测</view>
+                    <view class='section_2_txt'>7年空气检测治理专家</view>
+                    <image src='../images/sectionBtm.png' class='sectionImg'></image> 
+                </view>
+            </navigator>
+ <!--section_right_bottom end-->  
+            </view>
+          </view>
+<!--section_2 end-->
+          <view class='section_3'>
+          <block wx:for="{{sections}}"  wx:for-item='item' wx:for-index='index' wx:key='a'>
+              <view class='section3_list'>
+              <view class='section3_title'>{{item.name}}<text>{{!item.projectId?'互联网+第三方房屋质量监督检测平台':''}}</text> </view>
+              <image src='{{item.img}}'></image>
+              <navigator url="../check/check?id={{item.projectId}}" hover-class="none" wx:if='{{item.projectId}}'>
+                  <view class='btn_make'><button>立即预约</button></view>
+                </navigator>
+              </view>
+            </block>
+          </view>     
+<!--section_3 end-->   
+        </view>         
+<!--w_367 end-->   
+    </view> 
+      <!-- 置底footer --> 
+    <template is="footer_addemble" data='{{_id_1}}'> </template>
+ 
+</view>

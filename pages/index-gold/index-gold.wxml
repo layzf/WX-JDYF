@@ -1,0 +1,7 @@
+<!--pages/index-gold/index-gold.wxml-->
+<import src="../public/indexnav/indexnav" />
+
+<template is="indexNav" data='{{navData,currentTab}}'></template>
+ <view style='margin-top:95rpx;'>
+  多金卡
+ </view>

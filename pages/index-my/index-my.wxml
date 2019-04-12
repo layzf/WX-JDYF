@@ -1,0 +1,64 @@
+ <import src="../public/indexnav/indexnav" />
+
+ <template is="indexNav" data='{{navData,currentTab}}'></template>
+ <view class='myself_height' style='margin-top:95rpx;'>
+      <view wx:if='{{hasUserInfo}}'>
+           <navigator hover-class='none' url='../setting/personalInformation/personalInformation'>
+              <view class='myselfTop flex-row-between '>
+                  <view class='userAvata flex-row'>
+                    <image src='{{userInfo.avatarUrl}}'></image>
+                    <view class='userName'>
+                        <view>{{userInfo.nickName}}</view>
+                        <view>137****6787</view>
+                    </view>
+                  </view>
+                  <view class='rl_img'>
+                    <image src='../images/rl.png'></image>
+                  </view>
+              </view>
+          </navigator>
+      <!--userAvatarUrl end-->
+          <view class='myself_my_order bgF'>
+            <view class='w_361'>我的订单</view>
+            <view class='myself_kit'>
+            <view>
+                  <navigator hover-class='none' url='../my-order-item/my-order-item?is_order=order'>
+                      <image src='../images/my-list.png' class='kit_1'></image>
+                      <view>我的订单</view>
+                  </navigator>
+              </view>
+            </view>  
+          </view>
+
+          <view class='myself_my_order bgF'>
+            <view class='w_361'>其他服务</view>
+            <view class='myself_kit kit_serve'>
+              <view>
+                 <navigator hover-class='none' url='../setting/myhouse/myhouse'>
+                    <image src='../images/my-houser.png' class='kit_2'></image>
+                    <view>我的房屋</view>
+                  </navigator>
+               </view>
+              <view>
+                  <navigator hover-class='none' url='../my-order-item/my-order-item?is_order=appointment'>
+                    <image src='../images/my-clock.png' class='kit_3'></image>
+                    <view>我的预约</view>
+                  </navigator>
+              </view>
+              <view catchtap='goldCard'>
+                  <image src='../images/my-goldCase.png' class='kit_4'></image>
+                  <view>多金卡</view>
+              </view>
+              <view catchtap='tellNumber'>
+                  <image src='../images/my-userImg.png' class='kit_5'></image>
+                  <view>官方客服</view>
+              </view>
+            </view>  
+          </view>
+      </view>
+     
+
+      <button wx:elif="{{!hasUserInfo}}" open-type="getPhoneNumber" bindgetphonenumber="getUserInfo"> 获取头像昵称 </button>   
+ 
+   <!--myself_height end-->
+   </view>

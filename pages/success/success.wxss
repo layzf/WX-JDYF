@@ -1,0 +1,31 @@
+/* pages/success/success.wxss */
+.success_img{
+  text-align: center;
+}
+.success_img image{
+  width: 186rpx;
+  height: 186rpx;
+  margin:108rpx 282rpx 28rpx;
+}
+.success_img text{
+  font-size: 40rpx;
+  margin-bottom: 100rpx;
+}
+.success_img>view view{
+  margin:30rpx 88rpx 50rpx;
+  color: #888;
+  font-size: 32rpx;
+}
+.success button{
+  width: 670rpx;
+  border-radius: 20rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+}
+.details{
+  margin-top: 30rpx;
+  border:4rpx solid #DFDFDF;
+}
+.switch{
+  border:4rpx solid #0186CB;
+}

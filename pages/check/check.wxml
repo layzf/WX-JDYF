@@ -1,0 +1,44 @@
+<import src="../public/checkcommon/checkcommon" />
+<import src="../public/assemble/assemble" />
+
+
+
+<template is="check" data='{{item:detailsList,options}}'></template>
+
+ <template is="footer_addemble" data='{{item:detailsList,options}}'></template>
+
+
+<view class="commodity_screen"  wx:if="{{showModalStatus}}" bindtap='showModal'  catchtouchmove="return"></view>
+<!--弹出框 -->
+<view animation="{{animationData}}" style='bottom:{{bottom}}px;' class="commodity_attr_box" wx:if="{{showModalStatus}}" catchtouchmove="return">
+      <view class='writr_infotmation'>填写预约信息</view>
+      <form  bindsubmit="formSubmit">
+          <view class='setting_all flex-r v-center'>
+             <input type='text' placeholder='输入你的称呼'  bindfocus="focus"  bindblur='blur'></input>
+          </view>
+          <view class='setting_all flex-r v-center'>
+             <input type='text' value='13720278895' disabled  ></input>
+          </view>
+          
+            <navigator hover-class='none' url='../setting/myhouse/myhouse'>
+            <view class='setting_all flex-row-between v-center '>
+                <input type='text' placeholder='我的房屋' disabled></input>
+                <image src='../images/checkrl.png' class='rl_W'></image>
+          </view>
+            </navigator>  
+         
+          <view class=" setting_all flex-r v-center">
+            <picker
+              mode="date"
+              value="{{date}}"
+              bindchange="bindDateChange"
+            >
+              <input value='{{date}}'placeholder='选择时间' disabled></input>
+            </picker>
+          </view>
+          
+          <navigator hover-class='none' url='../success/success?suc=yuyue' >
+                <button form-type="submit" class='switch switch_btn'>确认提交</button>
+          </navigator>
+      </form> 
+</view>

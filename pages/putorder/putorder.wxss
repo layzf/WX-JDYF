@@ -1,0 +1,2 @@
+@import "../public/order/putorder/putorder.wxss";
+@import "../public/assemble/assemble.wxss";

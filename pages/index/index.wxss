@@ -1,0 +1,100 @@
+@import "../public/indexnav/indexnav.wxss";
+page{
+  padding-bottom: 160rpx;
+}
+.section_1{
+  background: #FFF;
+  padding-bottom:16rpx
+}
+.index_banner_text image{
+  width: 22rpx;
+  height: 22rpx;
+  margin-right: 8rpx;
+}
+.index_banner_text text{
+  font-size:24rpx;
+  color: #0293DE;
+}
+.index_banner_text view{
+  display: flex;
+  align-items: center;
+}
+.section_2{
+  margin-top:8rpx;
+}
+.section_left{
+  padding: 50rpx 24rpx 18rpx 46rpx;
+  border-radius: 8rpx;
+  margin-right: 8rpx;
+  position: relative;
+  width: 368rpx;
+  height: 360rpx;
+  box-sizing: border-box;
+}
+.section_left image{
+  width: 228rpx;
+  height: 188rpx;
+}
+.section_right_top image{
+  width: 114rpx;
+  height: 96rpx;
+  bottom: 6rpx;
+  right: 14rpx;
+}
+.section_left .section_2_txt{
+    margin-top: 8rpx;
+}
+.section_right_top{
+  padding-top: 32rpx;
+  padding-left: 20rpx;
+}
+
+.section_right_top .section_2_txt{
+  width: 210rpx;
+  display: inline-block;
+  margin-top: 16rpx;
+}
+.section_right_bottom{
+  margin-top: 8rpx;
+  padding-left: 20rpx;
+  padding-top: 46rpx;
+}
+.section_right_bottom image{
+  width: 94rpx;
+  height: 94rpx;
+  right: 22rpx;
+  bottom: 20rpx;
+}
+.section_right_bottom .section_2_txt{
+  margin-top: 18rpx;
+}
+.section_3{
+  margin-top: 8rpx;
+}
+.section3_list{
+  height: 702rpx;
+  border-radius: 8rpx;
+  background: #fff;
+  width: 734rpx;
+  margin: 0 auto;
+  box-sizing: border-box;
+  margin-bottom: 8rpx;
+  position:relative;
+}
+.section3_list image{
+  width: 100%;
+  margin-top: 20rpx;
+}
+.section3_list:last-child{
+  margin-bottom: 0;
+}
+.section3_title{
+  font-size: 28rpx;
+  color: #222223;
+  padding: 20rpx 0 0 16rpx
+}
+.section3_title text{
+  color: #767676;
+  font-size: 20rpx;
+  margin-left: 12rpx;
+}

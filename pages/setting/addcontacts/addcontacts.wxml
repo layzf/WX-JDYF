@@ -1,0 +1,22 @@
+<view class='settion_martop'>
+    <form bindsubmit="formSubmit">
+       <view class='bgF'>
+           <view class='setting_all flex-row-between v-center'>
+            <view>
+                <input placeholder='姓名'  name="name"></input>
+            </view>
+            <view class='flex-r v-center'>
+                <image src='../../images/checkrl.png' class='rl_W'></image>
+            </view>
+        </view>
+        <view class='setting_all flex-row-between v-center'>
+            <view>
+                <input placeholder='电话' name="tell"></input>
+            </view>
+        </view>
+       
+       </view>
+         <button form-type="submit" class='switch switch_btn'>保存</button>
+    </form> 
+</view>
+

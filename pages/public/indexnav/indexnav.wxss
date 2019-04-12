@@ -1,0 +1,35 @@
+.nav {
+    height: 90rpx;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    line-height: 90rpx;
+    background: #ffffff;
+    z-index: 99;
+    margin-bottom: 4rpx;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.nav-item {
+    width: 20%;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+}
+.nav-item.active::after{
+  position: absolute;
+  content: "";
+  bottom: 2rpx;
+  width: 80rpx;
+  height: 4rpx;
+  background: #0293DE;
+  left: 50%;
+  margin-left: -40rpx;
+}
+.nav-item.active{
+    color: #0293DE;
+}
+.tab-box{
+    box-sizing: border-box;
+}

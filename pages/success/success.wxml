@@ -1,0 +1,18 @@
+
+<view class='success'>
+      <view class='success_img'>  
+          <image src='../images/success.png'> </image>
+          <view wx:if='{{succestion=="yuyue"}}'>
+              <text>预约成功</text>
+          </view>
+          <view wx:elif='{{succestion!="yuyue"}}'>
+               <text>支付成功</text>
+               <view wx:if="{{succestion==2}}">后续在我的订金详情页可以联系客服上门签合同或者咨询相关问题</view>
+               <view wx:elif="{{succestion==3}}">后续在我的订金详情页可以联系客服上门检测或者咨询相关问题</view>
+          </view>
+          <!-- <view wx:elif="{{succestion==2}}">后续在我的订金详情页可以联系客服预约验房师</view> -->
+      </view>
+
+      <button class='switch_btn switch' catchtap='tellNumber'>联系客服</button>
+      <button class='switch_btn details'>查看详情</button>
+</view>

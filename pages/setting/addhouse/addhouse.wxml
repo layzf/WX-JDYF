@@ -1,0 +1,44 @@
+<view class='settion_martop'>
+    <form bindsubmit="formSubmit">
+       <view class='bgF'>
+           <view class='setting_all flex-row-between v-center'>
+            <view>
+                <input placeholder='选择所在地区'  name="site"></input>
+            </view>
+            <view class='flex-r v-center'>
+                <image src='../../images/checkrl.png' class='rl_W'></image>
+            </view>
+        </view>
+        <view class='setting_all flex-row-between v-center'>
+            <view>
+                <input placeholder='小区名称' name="Qname"></input>
+            </view>
+        </view>
+        <view class='setting_all flex-row-between v-center'>
+            <view>
+                <input placeholder='楼栋/单元' name="input3"></input>
+            </view>
+        </view>
+        <view class='setting_all flex-row-between v-center'>
+            <view>
+                <input placeholder='房号' name="input"></input>
+            </view>
+        </view>
+          <view class='setting_all flex-row-between v-center'>
+            <view>
+                <input placeholder='房屋户型' ></input>
+            </view>
+            <view class='flex-r v-center'>
+                <image src='../../images/checkrl.png' class='rl_W'></image>
+            </view>
+        </view>
+          <view class='setting_all flex-row-between v-center'>
+            <view>
+                <input placeholder='建筑面积' name="input"></input>
+            </view>
+        </view>
+       </view>
+         <button form-type="submit" class='switch switch_btn'>保存</button>
+    </form> 
+</view>
+

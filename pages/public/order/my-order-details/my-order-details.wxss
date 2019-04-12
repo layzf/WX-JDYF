@@ -1,0 +1,67 @@
+.order_details_header{
+  height: 152rpx;
+  background: #E94816;
+  padding: 0 32rpx;
+}
+.order_details_header image{
+  margin-right: 10rpx;
+}
+.fl_clock{
+  width: 40rpx;
+  height: 40rpx;
+}
+.fr_tell{
+  width: 32rpx;
+  height: 28rpx;
+}
+.order_details_header text{
+  color: #FFF;
+}
+.h_54{
+  height: 108rpx;
+  padding-left: 18rpx;
+}
+.h_54 image{
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 20rpx;
+}
+.order_details_inforamtion{
+  padding: 30rpx 0; 
+}
+.order_details_inimg{
+  display: flex;
+}
+.order_details_title{
+  margin-top: 14rpx;
+}
+.order_details_inimg image{
+  width: 240rpx;
+  height: 180rpx;
+  margin-right: 20rpx;
+}
+.order_details_money{
+  height: 108rpx;
+  padding: 0 36rpx;
+}
+.footer_details{
+  padding:16rpx 24rpx 10rpx;
+
+}
+.footer_details>view{
+  margin-bottom: 16rpx;
+  color: #999; 
+}
+.footer_details>view text{
+  color:#666;
+}
+.footer_details>view:last-of-type{
+  margin-bottom: 0;
+}
+.footer_btns{
+  height: 104rpx;
+  margin-top:30rpx;
+}
+.footer_btns button{
+  margin-right: 28rpx;
+}

@@ -1,0 +1,3 @@
+<import src="../public/order/my-order-item/my-order-item" />
+
+<template is="my-order-item" data='{{is_order}}'></template>

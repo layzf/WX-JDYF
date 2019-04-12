@@ -1,0 +1,2 @@
+/* pages/index-gold/index-gold.wxss */
+@import "../public/indexnav/indexnav.wxss";

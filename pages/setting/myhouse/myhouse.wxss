@@ -1,0 +1,16 @@
+@import '../contacts/contacts.wxss';
+.site image{
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 14rpx;
+}
+.site{
+  margin-top: 28rpx;
+}
+.h_96{
+  flex-direction: column;
+  height: 192rpx;
+}
+.h_96>text{
+  padding-left: 10rpx;
+}

@@ -1,0 +1,70 @@
+<template name="check">
+  <view class=''>
+      <view>
+        <image src='{{item.imgUrl}}' alt='金雕专业' class='index_banner'></image>
+      </view>
+      <view class='check_flow'>
+        <view class='flow_tit'>{{item.projectContent}}</view>
+        <view class='flow_box  {{options==1||options==2||options=="qcode" ? "flex-row-between":"check_houser"}}'>
+          <view>
+            <view>1</view>
+            <text>{{options==2 || options==3?'交订金预约':'预约验房'}}</text>
+          </view>
+          <view>
+            <view>2</view>
+            <text> {{options==1 ||options=="qcode" ?'交订金':options==2 ?'上门签订合同':options==3?'上门检测':''}}  </text>
+          </view>
+          <view wx:if='{{options==1 || options=="qcode"}}'>
+            <view>3</view>
+            <text>上门验房</text>
+          </view>
+          <view>
+            <view>{{options==1 || options=="qcode"?'4':'3'}}</view>
+            <text>支付尾款</text>
+          </view>
+        </view>
+        <view class='w_347'>
+          <view class='ass_num'>已有
+            <text>198</text>户{{options==1 ||options=="qcode" ?'预约验房':options==2 ?'预约监理':options==3?'预约检测':''}}</view>
+          <swiper autoplay='true' interval='3000' duration='1500' circular='true' display-multiple-items='2' vertical='true' style='height:100rpx;'>
+            <swiper-item>
+              <view class='flex-row-center animation_avtive'>
+                <image src='../images/userAvatar.jpg'></image>
+                <view class='assName'>离先生（137****8876）</view>
+                <view>预约成功</view>
+              </view>
+            </swiper-item>
+            <swiper-item>
+              <view class='flex-row-center animation_avtive'>
+                <image src='../images/userAvatar.jpg'></image>
+                <view class='assName'>刘先生（137****8876）</view>
+                <view>预约成功</view>
+              </view>
+            </swiper-item>
+            <swiper-item>
+              <view class='flex-row-center animation_avtive'>
+                <image src='../images/userAvatar.jpg'></image>
+                <view class='assName'>张先生（137****8876）</view>
+                <view>预约成功</view>
+              </view>
+            </swiper-item>
+            <swiper-item>
+              <view class='flex-row-center animation_avtive'>
+                <image src='../images/userAvatar.jpg'></image>
+                <view class='assName'>李先生（137****8876）</view>
+                <view>预约成功</view>
+              </view>
+            </swiper-item>
+          </swiper>
+        </view>
+      </view>
+
+      <view class='check_flow check_suggest'>
+        <view class='flow_tit'>{{item.projectName}}</view>
+       <view>{{}}</view>
+        <block wx:for="{{item.projectImgs}}" wx:for-item="item" wx:key="pro">
+           <image src='{{item.imgUrl}}' alt='金雕专业' class='index_banner'></image>
+        </block>
+      </view>
+  </view>
+</template>

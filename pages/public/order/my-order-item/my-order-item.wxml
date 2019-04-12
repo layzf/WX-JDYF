@@ -1,0 +1,120 @@
+<template name="my-order-item">
+
+  <view class='order-items' wx:if='{{is_order=="order"}}'>
+
+  
+    <view>
+      <navigator url='../my-order-details/my-order-details?order=1' hover-class='none'>
+        <view class='order_list_title   flex-row-between border-bottom'>
+          <view class='color_999'>2018-01-01</view>
+          <text>等待派单</text>
+        </view>
+        <view class='order_list_img border-bottom'>
+          <image src='../images/in.png'></image>
+          <view class='order_title'>金雕监理</view>
+        </view>
+      </navigator>
+      <view class='order_moeny'>
+        <view class='color_999'>已付定金：
+          <text class='color_ED6'>100元</text> </view>
+      </view>
+    </view>
+
+    <view>
+     <navigator url='../my-order-details/my-order-details?order=2' hover-class='none'>
+        <view class='order_list_title   flex-row-between border-bottom'>
+          <view class='color_999'>2018-01-01</view>
+          <text>等待上门</text>
+        </view>
+        <view class='order_list_img border-bottom'>
+          <image src='../images/in.png'></image>
+          <view class='order_title'>金雕监理</view>
+        </view>
+     </navigator> 
+      <view class='order_moeny'>
+        <view class='color_999'>已付定金：
+          <text class='color_ED6'>100元</text> </view>
+      </view>
+    </view>
+
+    <view>
+      <view class='order_list_title   flex-row-between border-bottom'>
+        <view class='color_999'>2018-01-01</view>
+        <text>等待派单</text>
+      </view>
+      <view class='order_list_img border-bottom'>
+        <image src='../images/in.png'></image>
+        <view class='order_list_txt'>
+          <view class='order_title'>江山帝景小区验房团购</view>
+          <text class='color_999'>单价：120元/㎡</text>
+        </view>
+      </view>
+      <view class='order_moeny'>
+        <view class='color_999'>已付定金：
+          <text class='color_ED6'>100元</text> </view>
+      </view>
+    </view>
+
+
+    <view>
+    <navigator url='../my-order-details/my-order-details?order=3' hover-class='none'>
+      <view class='order_list_title   flex-row-between border-bottom'>
+        <view class='color_999'>2018-01-01</view>
+        <text>等待尾款</text>
+      </view>
+      <view class='order_list_img border-bottom'>
+        <image src='../images/in.png'></image>
+        <view class='order_list_txt'>
+          <view class='order_title'>江山帝景小区验房团购</view>
+          <text class='color_999'>单价：120元/㎡</text>
+        </view>
+      </view>
+    </navigator>
+      <view class=' order_wait_payment'>
+        <view class='color_999'>已付定金：<text class='color_ED6'>50元</text> </view>
+        <view class='color_ED6'>验房师已验房，待付尾款：213元</view>
+        <button class='order_btn_active color_816'>支付尾款</button>
+      </view>
+    </view>
+
+    <view>
+      <view class='order_list_title   flex-row-between border-bottom'>
+        <view class='color_999'>2018-01-01</view>
+        <text>已完成</text>
+      </view>
+      <view class='order_list_img border-bottom'>
+        <image src='../images/in.png'></image>
+        <view class='order_list_txt'>
+          <view class='order_title'>江山帝景小区验房团购</view>
+          <text class='color_999'>单价：120元/㎡</text>
+        </view>
+      </view>
+      <view class='order_moeny'>
+        <view class='color_999'>已付定金：
+          <text class='color_ED6'>100元</text> </view>
+      </view>
+    </view>
+
+
+</view>
+
+  <view wx:elif='{{is_order=="appointment"}}' class='order-items'>
+      <view>
+        <view class='order_list_title   flex-row-between border-bottom'>
+          <view class='color_999'>2018-01-01</view>
+          <text>已预约</text>
+        </view>
+        <view class='order_list_img border-bottom'>
+          <image src='../images/in.png'></image>
+          <view class='order_list_txt'>
+            <view class='order_title'>金雕验房</view>
+            <text class='color_999'>预约时间：2019-04-05</text>
+          </view>
+        </view>
+        <view class='appointment_btn'>
+            <button class='order_btn  order_btn_active color_666'>查看详情</button>
+            <button class='order_btn_active color_816'>支付尾款</button>
+        </view>
+      </view>
+  </view> 
+</template>

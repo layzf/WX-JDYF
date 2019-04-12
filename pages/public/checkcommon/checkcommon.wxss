@@ -1,0 +1,78 @@
+.flow_box>view{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.flow_tit{
+  padding-left: 20rpx;
+  font-size: 30rpx;
+  color: #333;
+  margin-bottom: 24rpx;
+}
+.check_flow{
+  background: #FFF;
+  padding-top: 24rpx;
+}
+.flow_box{
+  padding:0 20rpx;
+  box-sizing: border-box;
+}
+.flow_box>view view{
+  border-radius: 100px;
+  background: #E3EFFB;
+  border: 1px solid #1C9EE1;
+  width: 40rpx;
+  height: 40rpx;
+  text-align: center;
+  line-height: 40rpx;
+  margin-right: 8rpx;
+  color: #1C9EE1; 
+}
+.flow_box>view text{
+  font-size: 26rpx;
+  color: #666666;
+}
+.w_347{
+  width: 694rpx;
+  margin: 0 auto;
+  margin-top: 28rpx;
+  border-top: 1px solid #f7f7f7;
+  padding-bottom: 28rpx;
+}
+.ass_num{
+  font-size: 26rpx;
+  text-align: center;
+  margin: 34rpx 0;
+}
+.ass_num text{
+  font-size: 40rpx;
+  color: #0293DE;
+}
+.animation_avtive{
+  margin-bottom: 16rpx;
+}
+
+.animation_avtive image{
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 100px;
+  margin-right: 8rpx;
+}
+.assName{
+  color: #666666;
+  font-size: 26rpx;
+  margin-right: 34rpx;
+}
+.check_suggest{
+  margin-top: 8rpx;
+}
+.check_suggest .index_banner{
+  margin-top: 8rpx;
+}
+.check_houser{
+  display: flex;
+  align-items: center;
+}
+.check_houser>view{
+  margin-right: 54rpx;
+}

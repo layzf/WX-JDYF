@@ -1,0 +1,67 @@
+<template name="footer_addemble" >
+    <view wx:if='{{footer_sub!="projectType"}}'>
+    <view class='footerFixed'>
+      <view class='footer_assemble'>
+          <view class='footer_iconV flex-row-center' catchtap='tellNumber'>
+              <image src='../images/userCommper.png'></image>
+              <text>在线客服 </text>
+          </view>
+<!--首页 立即预约   options：通过首页接受的；footer_sub：订单详情接受的；-->  
+          <navigator wx:if='{{!options }}' 
+                     class='maskBtn' 
+                     hover-class="none"
+                     url="../check/check?id={{_id_1}}"
+                     >
+                <view>立即预约</view>
+          </navigator>
+<!--验房预约详情 立即预约-->
+             <view  wx:elif='{{options==1}}'class='maskBtn' catchtap='index_model'>立即预约</view>
+<!--监理详情 交订金-->          
+           <navigator wx:if='{{item.projectType==2}}' 
+                      class='maskBtn' 
+                      hover-class="none"
+                      open-type="redirect"
+                      url='../putorder/putorder?footer_sub=projectType&succ={{item.id}}&money={{item.soPrice}}'>
+              <view>交订金{{item.soPrice}}</view>
+          </navigator>
+<!--空气检测 交订金-->    
+           <navigator wx:elif='{{item.projectType==2}}' 
+                      class='maskBtn'
+                      hover-class="none"
+                      open-type="redirect"
+                      url='../putorder/putorder?footer_sub=projectType&succ={{item.id}}&money={{item.soPrice}}'
+                      >
+             <view>交订金{{item.soPrice}}</view>
+          </navigator>  
+<!--扫码进入 交订金-->          
+          <navigator wx:elif='{{options=="qcode"}}' 
+                      class='maskBtn' 
+                      hover-class="none"
+                      open-type="redirect"
+                      url='../putorder/putorder?footer_sub=projectType'>
+              <view>交订金80</view>
+          </navigator>     
+      </view> 
+    </view> 
+    </view> 
+
+<!--订单详情 提交-->
+  <view wx:elif='{{footer_sub=="projectType" }}'>
+ <view class='footerFixed'>
+      <view class='footer_assemble'>
+          <view class='footer_iconV flex-row-center order_sub'>
+              <text>应付金额 <text class='color_816'>300元</text> </text>
+          </view>  
+          <navigator class='maskBtn'
+                    hover-class="none"
+                    open-type="redirect" url='../success/success?suc={{succ}}'
+                    >
+            <view>提交</view>
+        </navigator> 
+      </view>
+    </view>
+  </view>    
+
+  
+
+</template>

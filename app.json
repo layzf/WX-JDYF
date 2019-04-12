@@ -1,0 +1,29 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/index-my/index-my",
+   "pages/index-case/index-case",
+    "pages/index-gold/index-gold",
+    
+    "pages/my-order-item/my-order-item",
+    "pages/my-order-details/my-order-details",
+    "pages/success/success",
+    "pages/setting/personalInformation/personalInformation",
+    "pages/setting/contacts/contacts",
+    "pages/setting/addcontacts/addcontacts",
+    "pages/setting/addhouse/addhouse",
+    "pages/check/check",
+    "pages/setting/myhouse/myhouse",
+    "pages/putorder/putorder",
+    "pages/qecode/qecode"
+
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black",
+    "backgroundColor":"#f7f7f7"
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,43 @@
+<view class='settion_martop'>
+    <form >
+       <view class='bgF'>
+           <view class='setting_all flex-row-between v-center'>
+        <view >
+                <input placeholder='称呼' disabled></input>
+            </view>
+            <view class='flex-r v-center'>
+                <view class='color_666' >修改称呼</view>
+                <image src='../../images/checkrl.png' class='rl_W'></image>
+            </view>
+        </view>
+        <view class='setting_all flex-row-between v-center'>
+            <view>
+                <input placeholder='手机号' disabled></input>
+            </view>
+            <view class='flex-r v-center'>
+                <view class='color_666'>更改手机号</view>
+                <image src='../../images/checkrl.png' class='rl_W'></image>
+            </view>
+        </view>
+      
+            <navigator url='../myhouse/myhouse' hover-class='none' class='setting_all flex-row-between v-center'>
+                <view>
+                  <input placeholder='我的房屋' disabled></input>
+                </view>
+                <view class='flex-r v-center'>
+                    <image src='../../images/checkrl.png' class='rl_W'></image>
+                </view>
+            </navigator>
+            <navigator url='../contacts/contacts' hover-class='none' class='setting_all flex-row-between v-center'>
+              <view>
+                  <input placeholder='常用联系人' disabled></input>
+              </view>
+              <view class='flex-r v-center'>
+                  <image src='../../images/checkrl.png' class='rl_W'></image>
+              </view>
+            </navigator>
+       </view>
+         <button form-type="submit" class='switch switch_btn' >切换账户</button>
+    </form> 
+</view>
+

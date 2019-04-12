@@ -1,0 +1,66 @@
+.order_pad{
+  margin: 0 28rpx;
+  box-sizing: border-box;
+  border-bottom: 1px solid #f7f7f7;
+  height: 108rpx; 
+}
+.order_pad:last-of-type{
+  border: none;
+}
+.order_pad image{
+  width: 18rpx;
+  height: 30rpx;
+}
+.order_pad>view{
+  color:#999;
+}
+.order_pad text{
+  color: #666666;
+  margin-right: 22rpx;
+}
+.check_tit{
+  height: 88rpx;
+  line-height: 88rpx;
+  border-bottom: 1px solid #f7f7f7;
+  margin: 0 28rpx;
+}
+.order_details_box{
+  display: flex;
+  padding: 30rpx 0; 
+}
+.order_details_box image{
+  width: 240rpx;
+  height: 180rpx;
+  margin-right: 20rpx;
+}
+.shoop_title{
+  margin: 20rpx 0;
+}
+.explain{
+  width: 450rpx;
+}
+.sub{
+  margin: 0 42rpx;
+  margin-top: 8rpx;
+  height: 108rpx;
+  border-bottom: 1px solid #f7f7f7;
+}
+.sub_box{
+  display:flex;
+  justify-content:flex-end;
+  flex-direction:column;
+  height:100%;
+}
+.sub_box text{
+  color: #999;
+  font-size: 24rpx;
+  margin-top: 12rpx;
+  display: inline-block;
+}
+.all_sub{
+  color: #E94816;
+  text-align: right;
+  margin-right: 42rpx;
+  height: 108rpx;
+  line-height: 108rpx;
+}

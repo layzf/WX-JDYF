@@ -1,0 +1,19 @@
+ <import src="../public/indexnav/indexnav" />
+ <template is="indexNav" data='{{navData,currentTab}}'></template>
+<view style="height:300px;padding-top:95rpx;">
+  <view class='resh' wx:if='{{resh}}'>{{reshtext}}</view>
+   <block wx:for='{{caseList}}' wx:for-index="idx" wx:for-item="item" wx:key="idx" bindtouchstart="mytouchstart"bindtouchmove="mytouchmove">
+          <view class='w_367 flex-cs-between case_list' >
+            <view>
+                  <view class='case_list_tit o-hs-2'>{{item.title}}</view>
+                  <text class='case_lis_mark_out'>{{item.mark}}</text>
+            </view>
+            <view>
+                <image src='../images/caserl.png' class='case_rl_img'></image>
+            </view>
+          </view>
+     </block>
+     <view class='resh' wx:if='{{footerresh}}'>{{reshtext}}</view>
+</view>
+
+  

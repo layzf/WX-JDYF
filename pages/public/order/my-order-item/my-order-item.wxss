@@ -1,0 +1,74 @@
+/*
+    等待派单，等待尾款，已完成 加类名：order_list_txt；
+
+ */
+
+.order-items>view{
+  margin-top: 6rpx;
+  background: #fff;
+}
+.order_list_title{
+  height: 88rpx;
+  line-height: 88rpx;
+  padding:0 14rpx 0 28rpx;
+}
+
+.order_list_title text{
+  color: #FF5D22;
+}
+.order_list_img{
+  margin:20rpx 28rpx 0rpx;
+  display: flex;
+  padding-bottom: 26rpx;
+}
+.order_list_img image{
+  width:240rpx;
+  height: 180rpx;
+  margin-right: 20rpx;
+  display: flex;
+}
+.order_list_img image{
+  width:240rpx;
+  height: 180rpx;
+  margin-right: 20rpx;
+}
+.order_title{
+  margin-top: 6rpx;
+}
+.order_moeny{
+ text-align: right;
+  margin-right: 34rpx;
+  height: 86rpx;
+  line-height: 86rpx;
+}
+.order_wait_payment{
+  padding-top: 30rpx;
+  padding-bottom: 34rpx;
+  text-align: right;
+  margin-right: 34rpx;
+}
+.order_list_txt{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.order_wait_payment .color_ED6{
+    margin-top: 14rpx;
+    margin-bottom: 28rpx;
+}
+.order_list_txt text{
+  margin-bottom: 20rpx;
+}
+.appointment_btn{
+  line-height: 106rpx;
+  height: 106rpx;
+  margin-right: 28rpx;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end
+}
+.order_btn{
+  border:1px solid #E9E9E9;
+  margin-right: 20rpx;
+}
